@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+pyenv install 3.13.12
+pyenv global 3.13.12 
