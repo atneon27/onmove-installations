@@ -22,8 +22,11 @@ run_step() {
     echo
 }
 
+// Installing Build Essentials
+run_step "Installing Build Essentials" bash ./dev-tool/install-build-essentials
+
 # Browsers
-#run_step "Installing Chrome" bash ./browser/install-chrome
+run_step "Installing Chrome" bash ./browser/install-chrome
 run_step "Installing Firefox" bash ./browser/install-firefox
 run_step "Installing LibreWolf" bash ./browser/install-librewolf
 
@@ -32,7 +35,6 @@ run_step "Installing Cursor" bash ./ide/install-cursor
 run_step "Installing VS Code" bash ./ide/install-vscode
 
 # Dev Tools
-run_step "Installing Build Essentials" bash ./dev-tool/install-build-essentials
 run_step "Installing Node, NPM & PNPM" bash ./dev-tool/install-js
 run_step "Installing uv" bash ./dev-tool/install-uv
 #run_step "Installing Pyenv" bash ./dev-tool/install-pyenv
