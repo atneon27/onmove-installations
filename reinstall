@@ -22,7 +22,7 @@ run_step() {
     echo
 }
 
-// Installing Build Essentials
+# Installing Build Essentials
 run_step "Installing Build Essentials" bash ./dev-tool/install-build-essentials
 
 # Browsers
