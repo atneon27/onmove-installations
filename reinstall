@@ -37,8 +37,8 @@ run_step "Installing VS Code" bash ./ide/install-vscode
 # Dev Tools
 run_step "Installing Node, NPM & PNPM" bash ./dev-tool/install-js
 run_step "Installing uv" bash ./dev-tool/install-uv
-#run_step "Installing Pyenv" bash ./dev-tool/install-pyenv
-#run_step "Setting global python version" bash ./dev-tool/set-latest-python
+run_step "Installing Pyenv" bash ./dev-tool/install-pyenv
+run_step "Setting global python version" bash ./dev-tool/set-latest-python
 run_step "Installing Goalng" bash ./dev-tool/install-golang
 run_step "Installing Rust" bash ./dev-tool/install-rust
 run_step "Installing CUDA" bash ./dev-tool/install-cuda
