@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 sudo apt update -y
-sudo apt install tree -y
-sudo apt install git -y
+sudo apt upgrade -y
+sudo apt install git curl wget tree -y
 sudo apt install build-essential -y
